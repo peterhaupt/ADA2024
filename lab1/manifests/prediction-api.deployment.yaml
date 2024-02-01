@@ -25,6 +25,6 @@ spec:
         - name: PROJECT_ID
           value: vertical-theory-413015 # use your project id
         - name: MODEL_REPO
-          value: labrepo # use your GCP bucket id
+          value: gce_peter # use your GCP bucket id
         - name: MODEL_NAME
           value: model.h5
