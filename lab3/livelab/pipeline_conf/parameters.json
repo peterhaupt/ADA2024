@@ -1,6 +1,6 @@
 {
-  "project_id": "your project id",
-  "data_bucket": "your data bucket",
+  "project_id": "vertical-theory-413015",
+  "data_bucket": "adadata_peter",
   "trainset_filename": "training_set.csv",
-  "model_repo": "your project model repo"
+  "model_repo": "adamodels_peter"
 }
