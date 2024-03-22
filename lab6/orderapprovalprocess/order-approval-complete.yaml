@@ -4,7 +4,7 @@ main:
   steps:
     - initGetInvURLVar:
         assign:
-          - GetInvURL: ${"http://Your_VM_IP:5000/products/" + args.pName}
+          - GetInvURL: ${"http://34.30.188.116:5000/products/" + args.pName}
     - checkInventory:
         call: http.get
         args:
@@ -31,7 +31,7 @@ accept_order_subprocess:
   steps:
     - initUpdateInvURLVar:
         assign:
-          - UpdateInvURL: ${"http://Your_VM_IP:5000/products/" + pName +"/quantity"}
+          - UpdateInvURL: ${"http://34.30.188.116:5000/products/" + pName +"/quantity"}
     - updateInventory:
         call: http.request
         args:
@@ -43,7 +43,7 @@ accept_order_subprocess:
     - createOrder:
         call: http.post
         args:
-          url: http://Your_VM_IP:5001/orders/
+          url: http://34.30.188.116:5001/orders/
           body:
             product_type: ${pName}
             quantity: ${rQuantity}
