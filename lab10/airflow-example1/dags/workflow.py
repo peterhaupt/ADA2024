@@ -53,7 +53,7 @@ with models.DAG(
 
     load_to_table = GCSToBigQueryOperator(
         task_id='load_to_bq_table',
-        bucket='adadata',
+        bucket='adadata_peter',
         source_objects=['sales_sum.csv'],
         destination_project_dataset_table="sales.summary",
         schema_fields=[
